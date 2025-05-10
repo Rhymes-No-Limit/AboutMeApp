@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		F3AED6142DCFCADE006ABFF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AED6132DCFCADE006ABFF1 /* AppDelegate.swift */; };
 		F3AED6162DCFCADE006ABFF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AED6152DCFCADE006ABFF1 /* SceneDelegate.swift */; };
-		F3AED6182DCFCADE006ABFF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AED6172DCFCADE006ABFF1 /* ViewController.swift */; };
+		F3AED6182DCFCADE006ABFF1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AED6172DCFCADE006ABFF1 /* MainViewController.swift */; };
 		F3AED61B2DCFCADE006ABFF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AED6192DCFCADE006ABFF1 /* Main.storyboard */; };
 		F3AED61D2DCFCAE9006ABFF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3AED61C2DCFCAE9006ABFF1 /* Assets.xcassets */; };
 		F3AED6202DCFCAE9006ABFF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AED61E2DCFCAE9006ABFF1 /* LaunchScreen.storyboard */; };
+		F3AED6282DCFD1D9006ABFF1 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AED6272DCFD1D9006ABFF1 /* LogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F3AED6102DCFCADE006ABFF1 /* AboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3AED6132DCFCADE006ABFF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3AED6152DCFCADE006ABFF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3AED6172DCFCADE006ABFF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3AED6172DCFCADE006ABFF1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F3AED61A2DCFCADE006ABFF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3AED61C2DCFCAE9006ABFF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3AED61F2DCFCAE9006ABFF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3AED6212DCFCAE9006ABFF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3AED6272DCFD1D9006ABFF1 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				F3AED6132DCFCADE006ABFF1 /* AppDelegate.swift */,
 				F3AED6152DCFCADE006ABFF1 /* SceneDelegate.swift */,
-				F3AED6172DCFCADE006ABFF1 /* ViewController.swift */,
+				F3AED6172DCFCADE006ABFF1 /* MainViewController.swift */,
+				F3AED6272DCFD1D9006ABFF1 /* LogViewController.swift */,
 				F3AED6192DCFCADE006ABFF1 /* Main.storyboard */,
 				F3AED61C2DCFCAE9006ABFF1 /* Assets.xcassets */,
 				F3AED61E2DCFCAE9006ABFF1 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3AED6182DCFCADE006ABFF1 /* ViewController.swift in Sources */,
+				F3AED6182DCFCADE006ABFF1 /* MainViewController.swift in Sources */,
 				F3AED6142DCFCADE006ABFF1 /* AppDelegate.swift in Sources */,
 				F3AED6162DCFCADE006ABFF1 /* SceneDelegate.swift in Sources */,
+				F3AED6282DCFD1D9006ABFF1 /* LogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
