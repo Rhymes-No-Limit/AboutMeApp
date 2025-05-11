@@ -38,7 +38,6 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Log In"/>
                                         <connections>
                                             <action selector="logInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XiH-RV-JFs"/>
-                                            <segue destination="rSQ-rG-h5Y" kind="presentation" modalPresentationStyle="fullScreen" id="iKg-Mu-N9x"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -81,6 +80,7 @@
                         <outlet property="logInButton" destination="FNE-T6-0dq" id="mcl-4Z-Br2"/>
                         <outlet property="passwordTF" destination="zco-cc-15U" id="uPr-3g-ahp"/>
                         <outlet property="userNameTF" destination="1Lw-Pb-4DT" id="tx0-pt-sLH"/>
+                        <segue destination="rSQ-rG-h5Y" kind="presentation" identifier="showLogScreen" id="1DO-sx-dnA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -92,7 +92,7 @@
             <objects>
                 <viewController id="rSQ-rG-h5Y" customClass="LogViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EKI-ny-nXR">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Ziw-vj-HdI">
@@ -113,10 +113,13 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsg-gD-Zfc">
-                                <rect key="frame" x="155.66666666666666" y="683.66666666666663" width="81.666666666666657" height="34.333333333333371"/>
+                                <rect key="frame" x="155.66666666666666" y="648.66666666666663" width="81.666666666666657" height="34.333333333333371"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log out"/>
+                                <connections>
+                                    <action selector="logOutButtonAction" destination="rSQ-rG-h5Y" eventType="touchUpInside" id="xcj-lD-5Uf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GFo-3g-x1D"/>
@@ -128,6 +131,9 @@
                             <constraint firstItem="GFo-3g-x1D" firstAttribute="bottom" secondItem="hsg-gD-Zfc" secondAttribute="bottom" constant="100" id="g5c-f0-0JU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="idb-AP-opP" id="TKh-v4-w6Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IhL-4x-XFo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

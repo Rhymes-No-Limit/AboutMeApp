@@ -26,7 +26,7 @@ final class MainViewController: UIViewController {
         }
         
         if loginText == currentLogin && passwordText == currentPassword {
-            
+            performSegue(withIdentifier: "showLogScreen", sender: self)
         } else {
             showAlert(withTitle: "Error", andMessage: "Wrong current login or password") {
                 self.passwordTF.text = ""
@@ -55,6 +55,15 @@ final class MainViewController: UIViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let destinationVC = segue.destination as? LogViewController
+            destinationVC?.userName = userNameTF.text
+        
+        userNameTF.text = ""
+        passwordTF.text = ""
+    }
+    
     
 }
 
