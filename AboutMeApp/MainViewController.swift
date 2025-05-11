@@ -8,7 +8,7 @@ final class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupKeyboardHandling()
         logInButton.layer.cornerRadius = 10
         passwordTF.isSecureTextEntry = true
     }
@@ -65,5 +65,35 @@ final class MainViewController: UIViewController {
     }
     
     
+}
+
+extension UIViewController {
+    func setupKeyboardHandling() {
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+            view.addGestureRecognizer(tapGesture)
+
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow),
+                                                   name: UIResponder.keyboardWillShowNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide),
+                                                   name: UIResponder.keyboardWillHideNotification, object: nil)
+        }
+
+        @objc private func dismissKeyboard() {
+            view.endEditing(true)
+        }
+
+        @objc private func keyboardWillShow(notification: Notification) {
+            guard view.frame.origin.y == 0 else { return }
+
+            if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+                view.frame.origin.y -= keyboardSize.height / 2
+            }
+        }
+
+        @objc private func keyboardWillHide(notification: Notification) {
+            if view.frame.origin.y != 0 {
+                view.frame.origin.y = 0
+            }
+        }
 }
 
