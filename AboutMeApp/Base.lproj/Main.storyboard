@@ -37,6 +37,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Log In"/>
                                         <connections>
+                                            <action selector="logInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XiH-RV-JFs"/>
                                             <segue destination="rSQ-rG-h5Y" kind="presentation" modalPresentationStyle="fullScreen" id="iKg-Mu-N9x"/>
                                         </connections>
                                     </button>
@@ -48,6 +49,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot User name?">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleFootnote"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="forgotUserNameAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jt4-df-qIe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayd-yp-MSh">
                                 <rect key="frame" x="210.66666666666663" y="502.00000000000006" width="132.33333333333337" height="29.666666666666686"/>
@@ -55,6 +59,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleFootnote"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="forgotPassordAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="j0S-eq-5Ch"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -70,6 +77,11 @@
                             <constraint firstItem="LsS-xL-PXS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qDy-nc-hna"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logInButton" destination="FNE-T6-0dq" id="mcl-4Z-Br2"/>
+                        <outlet property="passwordTF" destination="zco-cc-15U" id="uPr-3g-ahp"/>
+                        <outlet property="userNameTF" destination="1Lw-Pb-4DT" id="tx0-pt-sLH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
