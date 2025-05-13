@@ -37,7 +37,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Log In"/>
                                         <connections>
-                                            <action selector="logInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XiH-RV-JFs"/>
+                                            <segue destination="rSQ-rG-h5Y" kind="presentation" modalPresentationStyle="fullScreen" id="8lP-6d-e50"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -49,17 +49,17 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleFootnote"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="forgotUserNameAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jt4-df-qIe"/>
+                                    <action selector="forgotRegisterData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LIm-fp-NAh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayd-yp-MSh">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayd-yp-MSh">
                                 <rect key="frame" x="210.66666666666663" y="502.00000000000006" width="132.33333333333337" height="29.666666666666686"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleFootnote"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="forgotPassordAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="j0S-eq-5Ch"/>
+                                    <action selector="forgotRegisterData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4P-Kq-LLp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,7 +80,6 @@
                         <outlet property="logInButton" destination="FNE-T6-0dq" id="mcl-4Z-Br2"/>
                         <outlet property="passwordTF" destination="zco-cc-15U" id="uPr-3g-ahp"/>
                         <outlet property="userNameTF" destination="1Lw-Pb-4DT" id="tx0-pt-sLH"/>
-                        <segue destination="rSQ-rG-h5Y" kind="presentation" identifier="showLogScreen" id="1DO-sx-dnA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -92,7 +91,7 @@
             <objects>
                 <viewController id="rSQ-rG-h5Y" customClass="LogViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EKI-ny-nXR">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Ziw-vj-HdI">
@@ -113,12 +112,13 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsg-gD-Zfc">
-                                <rect key="frame" x="155.66666666666666" y="648.66666666666663" width="81.666666666666657" height="34.333333333333371"/>
+                                <rect key="frame" x="155.66666666666666" y="683.66666666666663" width="81.666666666666657" height="34.333333333333371"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log out"/>
                                 <connections>
                                     <action selector="logOutButtonAction" destination="rSQ-rG-h5Y" eventType="touchUpInside" id="xcj-lD-5Uf"/>
+                                    <segue destination="UTG-GW-n6f" kind="unwind" unwindAction="unwindFor:" id="nJZ-1F-Iia"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -136,6 +136,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IhL-4x-XFo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="UTG-GW-n6f" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="756" y="5"/>
         </scene>
