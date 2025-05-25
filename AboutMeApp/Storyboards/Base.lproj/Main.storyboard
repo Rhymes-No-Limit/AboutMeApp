@@ -131,7 +131,7 @@
                             <constraint firstItem="GFo-3g-x1D" firstAttribute="bottom" secondItem="hsg-gD-Zfc" secondAttribute="bottom" constant="100" id="g5c-f0-0JU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" selectedImage="homekit" catalog="system" id="ipd-nP-A4A"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="rectangle.inset.filled.and.person.filled" catalog="system" id="ipd-nP-A4A"/>
                     <connections>
                         <outlet property="profileName" destination="q6H-8N-jLv" id="CtB-8X-fk2"/>
                         <outlet property="welcomeLabel" destination="idb-AP-opP" id="TKh-v4-w6Z"/>
@@ -294,10 +294,10 @@
             </objects>
             <point key="canvasLocation" x="3588.5496183206105" y="4.9295774647887329"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="WFt-eD-7EV">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="muM-PY-uaM" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="muM-PY-uaM" customClass="TabBarViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tHf-yN-9HW">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -317,7 +317,7 @@
         <scene sceneID="JMa-qr-fsj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n4G-d1-4QR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" selectedImage="person.fill" catalog="system" id="jZZ-Dj-fTq"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="jZZ-Dj-fTq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Zh2-8m-99m">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
@@ -334,8 +334,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="rectangle.inset.filled.and.person.filled" catalog="system" width="128" height="87"/>
         <image name="я" width="853" height="1280"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
