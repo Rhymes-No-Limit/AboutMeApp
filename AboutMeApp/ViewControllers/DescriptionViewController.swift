@@ -9,6 +9,8 @@ final class DescriptionViewController: UIViewController {
         
         view.addVerticalGradientLayer(topColor: BackgroundColor.primary,
                                       bottomColor: BackgroundColor.secondary)
+        
+        descriptionLabel.text = Description.description()
 
     }
     

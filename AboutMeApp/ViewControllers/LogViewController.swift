@@ -3,6 +3,7 @@ import UIKit
 final class LogViewController: UIViewController {
 
     @IBOutlet var welcomeLabel: UILabel!
+    @IBOutlet var profileName: UILabel!
     
     var userName: String!
     
@@ -10,8 +11,8 @@ final class LogViewController: UIViewController {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: BackgroundColor.primary,
                                       bottomColor: BackgroundColor.secondary)
-            welcomeLabel.text = "Welcome, \(userName ?? "")"
-
+        
+        welcomeLabel.text = "Welcome, \(userName ?? "Гость")\nMy name is \(Description.name) \(Description.surname)"
     }
     
     @IBAction func logOutButtonAction() {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F34BC2132DE3A5980043A7E2 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34BC2122DE3A5980043A7E2 /* UIView.swift */; };
 		F34BC2152DE3A6E10043A7E2 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34BC2142DE3A6E10043A7E2 /* BackgroundColor.swift */; };
+		F34BC2172DE3BDD80043A7E2 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34BC2162DE3BDD80043A7E2 /* TabBarViewController.swift */; };
 		F3A687752DE36CDC00246059 /* description.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A687742DE36CDC00246059 /* description.swift */; };
 		F3A687772DE371B600246059 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A687762DE371B600246059 /* Login.swift */; };
 		F3A687792DE3743300246059 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A687782DE3743300246059 /* ProfileViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		F34BC2122DE3A5980043A7E2 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F34BC2142DE3A6E10043A7E2 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
+		F34BC2162DE3BDD80043A7E2 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		F3A687742DE36CDC00246059 /* description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = description.swift; sourceTree = "<group>"; };
 		F3A687762DE371B600246059 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		F3A687782DE3743300246059 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				F3AED6272DCFD1D9006ABFF1 /* LogViewController.swift */,
 				F3A687782DE3743300246059 /* ProfileViewController.swift */,
 				F3A6877A2DE374C000246059 /* DescriptionViewController.swift */,
+				F34BC2162DE3BDD80043A7E2 /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			files = (
 				F3AED6182DCFCADE006ABFF1 /* MainViewController.swift in Sources */,
 				F3AED6142DCFCADE006ABFF1 /* AppDelegate.swift in Sources */,
+				F34BC2172DE3BDD80043A7E2 /* TabBarViewController.swift in Sources */,
 				F3A687752DE36CDC00246059 /* description.swift in Sources */,
 				F3A687772DE371B600246059 /* Login.swift in Sources */,
 				F3A687792DE3743300246059 /* ProfileViewController.swift in Sources */,
