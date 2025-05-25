@@ -7,6 +7,9 @@ final class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addVerticalGradientLayer(topColor: BackgroundColor.primary,
+                                      bottomColor: BackgroundColor.secondary)
 
     }
 }
