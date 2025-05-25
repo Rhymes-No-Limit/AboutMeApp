@@ -6,19 +6,21 @@ final class MainViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     @IBOutlet var logInButton: UIButton!
     
-    private let user = "Rhymes"
-    private let password = "123"
+    private let login = Login.getLoginDate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         logInButton.layer.cornerRadius = 10
         passwordTF.isSecureTextEntry = true
+        
+        userNameTF.text = login.name
+        passwordTF.text = login.password
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? LogViewController else { return }
-        welcomeVC.userName = user
+        welcomeVC.userName = login.name
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -35,7 +37,7 @@ final class MainViewController: UIViewController {
             return false
         }
         
-        guard userNameTF.text == user, passwordTF.text == password else {
+        guard userNameTF.text == login.name, passwordTF.text == login.password else {
             showAlert(
                 withTitle: "Invalid login or password",
                 andMessage: "Please, enter correct login and password") {
@@ -50,8 +52,8 @@ final class MainViewController: UIViewController {
     
     @IBAction func forgotRegisterData(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(withTitle: "User name:", andMessage: "Your user name: \(user)")
-        : showAlert(withTitle: "Password:", andMessage: "Your password: \(password)")
+        ? showAlert(withTitle: "User name:", andMessage: "Your user name: \(login.name)")
+        : showAlert(withTitle: "Password:", andMessage: "Your password: \(login.password)")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {

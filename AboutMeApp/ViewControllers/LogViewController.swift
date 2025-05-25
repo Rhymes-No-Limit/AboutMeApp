@@ -1,6 +1,6 @@
 import UIKit
 
-class LogViewController: UIViewController {
+final class LogViewController: UIViewController {
 
     @IBOutlet var welcomeLabel: UILabel!
     
