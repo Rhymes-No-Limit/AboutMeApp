@@ -13,6 +13,7 @@ final class ProfileViewController: UIViewController {
         avatarImage.clipsToBounds = true
         view.addVerticalGradientLayer(topColor: BackgroundColor.primary,
                                       bottomColor: BackgroundColor.secondary)
+        title = "\(Description.name) \(Description.surname)"
         
         for label in descriptionLabels {
             switch label.tag {
